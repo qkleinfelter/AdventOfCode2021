@@ -1,4 +1,4 @@
-def day1():
+def solution():
     data = open(r'inputs\day2.in').readlines()
     print('Part 1 result: ' + str(part1(data)))
     print('Part 2 result: ' + str(part2(data)))
@@ -38,4 +38,4 @@ def part2(data):
     
     return horiz * depth
 
-day1()
+solution()

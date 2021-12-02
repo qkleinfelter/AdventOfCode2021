@@ -1,4 +1,4 @@
-def day1():
+def solution():
     data = [int(x) for x in open(r'inputs\day1.in')]
     print('Part 1 result: ' + str(part1(data)))
     print('Part 2 result: ' + str(part2(data)))
@@ -24,4 +24,4 @@ def part2(data):
             sum += 1
     return sum
 
-day1()
+solution()
