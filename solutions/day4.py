@@ -26,17 +26,16 @@ def part1(data, number_order):
                 for colindex in range(5):
                     if row[colindex] == int(current_number):
                         row[colindex] = -1
-        # cannot be any bingos if less than 5 numbers have beencalled
-        if (i < 5):
-            continue
-        if has_bingo(board):
-            unmarked = 0
-            for j in range(5):
-                for k in range(5):
-                    if (board[j][k] != -1):
-                        unmarked += board[j][k]
-            print(unmarked, current_number)
-            return unmarked * int(current_number)
+                        # cannot be any bingos if less than 5 numbers have beencalled
+                        if (i < 5):
+                            continue
+                        if has_bingo(board):
+                            unmarked = 0
+                            for j in range(5):
+                                for k in range(5):
+                                    if (board[j][k] != -1):
+                                        unmarked += board[j][k]
+                            return unmarked * int(current_number)
 
     return 0
 
