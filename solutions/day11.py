@@ -7,11 +7,7 @@ def part1(data):
     # 2d array of ints that represents the octopus' current value
     octomap = []
     for line in data:
-        line = line.strip()
-        row = []
-        for c in line:
-            row.append(int(c))
-        octomap.append(row)
+        octomap.append([int(x) for x in line.strip()])
     
     adj = {
             # up one row all 3 spots
@@ -64,13 +60,8 @@ def part2(data):
     # 2d array of ints of the octopus' current value
     octomap = []
     for line in data:
-        line = line.strip()
-        row = []
-        for c in line:
-            row.append(int(c))
-        octomap.append(row)
+        octomap.append([int(x) for x in line.strip()])
 
-    
     adj = {
             # up one row all 3 spots
             (-1, 1),
